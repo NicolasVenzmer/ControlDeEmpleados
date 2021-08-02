@@ -1,0 +1,52 @@
+<!-- Header -->
+<header id="header" class="header" style="margin-top: 5%">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-xl-5">
+        <div class="text-container">
+          <h1 class="font-weight-bold font-size:20px">
+            Administra tus empleados desde un solo lugar!
+          </h1>
+          <p class="p-large">Gastos, empleados activos y mas.</p>
+
+          <!-- Sign Up Form -->
+          <button
+            *ngIf="!isLoggedIn"
+            type="button"
+            class="btn btn-primary btn-lg nav-link"
+            routerLink="/login"
+            routerLinkActive="router-link-active"
+          >
+            <i class="far fa-user-circle"></i> Iniciar Sesion
+          </button>
+          <button
+            *ngIf="isLoggedIn"
+            type="button"
+            class="btn btn-primary btn-lg nav-link"
+            routerLink="/"
+          >
+          <i class="fas fa-chart-line"></i> Panel Empleados
+          </button>
+          <!-- end of sign up form -->
+        </div>
+        <!-- end of text-container -->
+      </div>
+      <!-- end of col -->
+      <div class="col-lg-6 col-xl-7">
+        <div class="image-container">
+          <img
+            class="img-fluid"
+            src="../../../assets/header-bulb-table.png"
+            alt="alternative"
+          />
+        </div>
+        <!-- end of image-container -->
+      </div>
+      <!-- end of col -->
+    </div>
+    <!-- end of row -->
+  </div>
+  <!-- end of container -->
+</header>
+<!-- end of header -->
+<!-- end of header -->
